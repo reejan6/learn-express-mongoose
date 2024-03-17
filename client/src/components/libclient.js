@@ -15,7 +15,7 @@ export default function LibClient() {
         .then(res => {
             let showDtls = false;
             if(contentType === 'books')
-                showDtls = true;
+                showDtls = true; 
             if(contentType === 'book_dtls') {
                 let copies = res.data.copies;
                 res.data = copies.map(function(copy) {
